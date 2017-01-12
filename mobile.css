@@ -1,0 +1,62 @@
+/* mobile.css */
+
+.isMobile #Header1 {
+    margin: 10px 0;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 15px;
+}
+.isMobile.PW-XS .h3,
+.isMobile.PW-XXS .h3,
+.isMobile.PW-XS h3,
+.isMobile.PW-XXS h3{
+    font-size: 1.2em;
+}
+.isMobile .main-wrapper-left .col-md-9 {
+    display: none;
+}
+.isMobile #main .col-md-8 {
+    display: none;
+}
+.isMobile .main-sidebar-right {
+    display: none
+}
+.isMobile .sidebar-right {
+    display: none
+}
+.isMobile .mobile-index-thumbnail {
+    float: left;
+    margin: 0 10px 0 0;
+}
+.isMobile .post-body {
+    font-size: 1em;
+}
+.isMobile .mobile-index-arrow {
+    display: -webkit-box;
+    float: right;
+    font-size: 45pt;
+    font-family: Arial;
+    height: 100%;
+    line-height: .3em;
+    right: 0;
+    top: 0;
+    -webkit-box-align: center;
+}
+.isMobile .mobile-index-thumbnail .Image {
+    max-width: 75px;
+    max-height: 75px;
+    overflow: hidden;
+}
+.isMobile #Blog1_blog-pager-newer-link,
+.isMobile #Blog1_blog-pager-older-link {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 10px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.isMobile.PW-XS #footer12,
+.isMobile.PW-XXS #footer12 {
+    padding-left: 0;
+    padding-right: 0;
+}
