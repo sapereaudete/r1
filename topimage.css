@@ -1,0 +1,101 @@
+/* topimage.css */
+
+.showTopImage .total-wrapper,
+.showTopImage .footer-wrapper {
+    display: none;
+}
+#topImage {
+    display: none;
+}
+.showTopImage #topImage {
+    display: block;
+}
+html.showTopImage,
+.showTopImage body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.showTopImage #topImage::before {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-size: 100% 100%;
+}
+.showTopImage.PW-XXS #topImage::before {
+    background-size: auto 100%;
+}
+.showTopImage #topImage {
+    background: transparent;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+.showTopImage #topImage hr {
+    background: rgba(220, 20, 60, 0.75);
+    background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(220, 20, 60, 0.75), rgba(0, 0, 0, 0));
+    /* Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(right, rgba(0, 0, 0, 0), rgba(220, 20, 60, 0.75), rgba(0, 0, 0, 0));
+    /* Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(right, rgba(0, 0, 0, 0), rgba(220, 20, 60, 0.75), rgba(0, 0, 0, 0));
+    /* Firefox 3.6 to 15 */
+    
+    background: linear-gradient(right, rgba(0, 0, 0, 0), rgba(220, 20, 60, 0.75), rgba(0, 0, 0, 0));
+    /* Standard syntax */
+    
+    border: 0;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.showTopImage #topImage button {
+    margin-top: 0;
+    font-size: 1.5vw;
+    border-style: outset;
+}
+.showTopImage #topImage > div {
+    bottom: 6.5vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    display: none;
+}
+.showTopImage #topImage span {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #444;
+    text-shadow: 1px 1px #ddd;
+    font-family: "Oswald";
+}
+.showTopImage #topImage div button {
+    font-family: "Oswald";
+}
+.showTopImage #topImage .s1 {
+    color: #DC143C;
+    font-size: 8vh;
+}
+.showTopImage #topImage .s2 {
+    font-size: 6vh;
+}
+.showTopImage #topImage .s3 {
+    color: #DC143C;
+    font-size: 12vw;
+}
+.showTopImage #topImage .s4 {
+    font-size: 6vh;
+    margin-bottom: 1.5%;
+}
+.showTopImage #topImage span {
+    padding: 0 10px;
+    text-shadow: 0 0 3px #fff;
+}
