@@ -633,6 +633,7 @@ nav .navbar-collapse.collapse.in .navbar-right {
 /* *** Breaking, Featured, Latest videos *** */
 
 iframe.autoResize {
+    border: none;
     display: block;
     margin: 0 auto;
     max-width: 960px; /*750*/
