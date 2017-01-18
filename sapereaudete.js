@@ -178,7 +178,17 @@ if ($("#postLizenz")) {
 	$("#postLizenz").insertAfter($(".post-body.entry-content"));
 }
 
-$(".PopularPosts .item-title a, .BlogArchive ul.posts li a").each(function() {
-	var text = this.innerText || this.textContent;
-	this.innerText ? this.innerText = text.replace("Sapere Audete: ","") : this.textContent = text.replace("Sapere Audete: ","");
-});
+(function () {
+  var mobile = window.location.search.indexOf('?m=1') > - 1 || window.location.search.indexOf('&m=1') > - 1;
+  if (mobile) {
+    var hrefs = document.querySelectorAll('a[href*="sapere-audete.blogspot"]') && document.querySelectorAll('a[href^="/p/"]'),
+    l = hrefs.length;
+    for (var i = 0; i < l; i++) {
+      if (mobile && hrefs[i].href.indexOf('?') < 0) {
+        hrefs[i].href = hrefs[i].href + '?m=1';
+      } else {
+        hrefs[i].href = hrefs[i].href + '&m=1';
+      }
+    }
+  }
+}) ();
