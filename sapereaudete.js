@@ -181,7 +181,6 @@ if ($("#postLizenz")) {
 (function () {
   var mobile = window.location.search.indexOf('?m=1') > - 1 || window.location.search.indexOf('&m=1') > - 1;
   if (mobile) {
-    document.querySelector('#searchform').action = document.querySelector('#searchform').action + '?m=1';
     var hrefs = document.querySelectorAll('a[href*="sapere-audete.blogspot"]') && document.querySelectorAll('a[href^="/p/"]'),
     l = hrefs.length;
     for (var i = 0; i < l; i++) {
