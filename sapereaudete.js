@@ -184,7 +184,7 @@ $(global.firstMostRead).trigger("click");
 if ($("#postLizenz")) {
 	$("#postLizenz").insertAfter($(".post-body.entry-content"));
 }
-
+/*
 (function () {
   var mobile = window.location.search.indexOf('?m=1') > - 1 || window.location.search.indexOf('&m=1') > - 1;
   if (mobile) {
@@ -208,3 +208,4 @@ if ($("#postLizenz")) {
     //document.querySelector('#desktopVersion').href 
   }
 }) ();
+*/
