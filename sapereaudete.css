@@ -200,6 +200,10 @@ body {
 #popular-posts-header .nav > li.active {
     font-weight: bold;
 }
+#mobilVersion,
+#desktopVersion {
+    display: none;
+}
 .PopularPosts {
     display: none;
 }
