@@ -145,7 +145,8 @@ $(window).scroll(function() {
 
 (function () {
   var host = location.protocol + '//' + location.host,
-  links = document.querySelectorAll('a:not([href^="' + host + '"]):not([href^="/p/"])'),
+  //links = document.querySelectorAll('a:not([href^="' + host + '"]):not([href^="/p/"])'),
+  links = document.querySelectorAll('a:not([href^="sapere-audete.blogspot"]):not([href^="/p/"])'),
   l = links.length;
   for (var i = 0; i < l; i++) {
     var href = links[i].href,
