@@ -193,5 +193,9 @@ if ($("#postLizenz")) {
     // Search
     document.querySelector('#formActionMobile').name = 'm';
     document.querySelector('#formActionMobile').value = '1';
+    // Desktop-Icon
+    document.querySelector('#desktopVersion').style.display = 'inline';
+  } else {
+    document.querySelector('#mobilVersion').style.display = 'inline';
   }
 }) ();
