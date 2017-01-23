@@ -194,8 +194,10 @@ if ($("#postLizenz")) {
     document.querySelector('#formActionMobile').name = 'm';
     document.querySelector('#formActionMobile').value = '1';
     // Desktop-Icon
-    document.querySelector('#desktopVersion').style.display = 'block';
+    //document.querySelector('#desktopVersion').style.display = 'block';
+    //document.querySelector('#desktopVersion').href 
   } else {
-    document.querySelector('#mobilVersion').style.display = 'block';
+    //document.querySelector('#mobilVersion').style.display = 'block';
+    //document.querySelector('#desktopVersion').href 
   }
 }) ();
