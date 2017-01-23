@@ -188,7 +188,7 @@ if ($("#postLizenz")) {
 (function () {
   var mobile = window.location.search.indexOf('?m=1') > - 1 || window.location.search.indexOf('&m=1') > - 1;
   if (mobile) {
-    var hrefs = dhrefs = document.querySelectorAll('a[href^="/p/"]:not([href*="m=1"]):not([class*="home-link"]), a[href*="sapere-audete.blogspot"]:not([href*="m=1"]):not([class*="home-link"])'),
+    var hrefs = document.querySelectorAll('a[href^="/p/"]:not([href*="m=1"]):not([class*="home-link"]), a[href*="sapere-audete.blogspot"]:not([href*="m=1"]):not([class*="home-link"])'),
     l = hrefs.length;
     for (var i = 0; i < l; i++) {
       if (mobile && hrefs[i].href.indexOf('?') < 0) {
