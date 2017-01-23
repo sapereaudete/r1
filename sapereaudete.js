@@ -191,7 +191,7 @@ if ($("#postLizenz")) {
       }
     }
     // Search
-    document.formActionMobile.name = 'm';
-    document.formActionMobile.value = '1';
+    document.querySelector('#formActionMobile').name = 'm';
+    document.querySelector('#formActionMobile').value = '1';
   }
 }) ();
