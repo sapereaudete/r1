@@ -149,10 +149,8 @@ $(window).scroll(function() {
   links = document.querySelectorAll('a:not([href^="sapere-audete.blogspot"]):not([href^="/p/"])'),
   l = links.length;
   for (var i = 0; i < l; i++) {
-    var href = links[i].href,
-    rel = links[i].rel,
+    var rel = links[i].rel,
     target = links[i].target;
-    //console.log(rel + ' | ' + target + ' | ' + href);
     if (!rel) {
       links[i].rel = 'nofollow';
     }
@@ -160,6 +158,14 @@ $(window).scroll(function() {
       links[i].target = '_blank';
     }
   }
+  links = document.querySelectorAll('a[href^="sapere-audete.blogspot"]'),
+  l = links.length;
+  for (var i = 0; i < l; i++) {
+    var target = links[i].target;
+    if (target) {
+      links[i].target = '_blank';
+    }
+  }	
 }) ();
 
 /* *** Most read *** */
