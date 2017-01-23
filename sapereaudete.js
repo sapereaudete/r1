@@ -190,5 +190,8 @@ if ($("#postLizenz")) {
         hrefs[i].href = hrefs[i].href + '&m=1';
       }
     }
+    // Search
+    document.formActionMobile.name = 'm';
+    document.formActionMobile.value = '1';
   }
 }) ();
