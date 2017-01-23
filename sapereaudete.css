@@ -264,6 +264,9 @@ blockquote {
     margin: 15px 25px;
     padding: 0 0 0 10px;
 }
+div.footerCite {
+    margin-top: 10px;
+}
 .videoTitle::before {
     content: '"';
 }
