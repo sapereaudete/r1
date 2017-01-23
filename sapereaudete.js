@@ -184,11 +184,11 @@ $(global.firstMostRead).trigger("click");
 if ($("#postLizenz")) {
 	$("#postLizenz").insertAfter($(".post-body.entry-content"));
 }
-/*
+ 
 (function () {
   var mobile = window.location.search.indexOf('?m=1') > - 1 || window.location.search.indexOf('&m=1') > - 1;
   if (mobile) {
-    var hrefs = document.querySelectorAll('a:not([href*="m=1"]), a[href*="sapere-audete.blogspot"], a[href^="/p/"], a:not([class*="home-link"])'),
+    var hrefs = dhrefs = document.querySelectorAll('a[href^="/p/"]:not([href*="m=1"]):not([class*="home-link"]), a[href*="sapere-audete.blogspot"]:not([href*="m=1"]):not([class*="home-link"])'),
     l = hrefs.length;
     for (var i = 0; i < l; i++) {
       if (mobile && hrefs[i].href.indexOf('?') < 0) {
@@ -208,4 +208,3 @@ if ($("#postLizenz")) {
     //document.querySelector('#desktopVersion').href 
   }
 }) ();
-*/
