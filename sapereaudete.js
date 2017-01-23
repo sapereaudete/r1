@@ -145,8 +145,8 @@ $(window).scroll(function() {
 
 (function () {
   var host = location.protocol + '//' + location.host,
-  //links = document.querySelectorAll('a:not([href^="' + host + '"]):not([href^="/p/"])'),
-  links = document.querySelectorAll('a:not([href^="sapere-audete.blogspot"]):not([href^="/p/"])'),
+  links = document.querySelectorAll('a:not([href^="' + host + '"]):not([href^="/p/"])'),
+  //links = document.querySelectorAll('a:not([href^="sapere-audete.blogspot"]):not([href^="/p/"])'),
   l = links.length;
   for (var i = 0; i < l; i++) {
     var rel = links[i].rel,
@@ -158,12 +158,12 @@ $(window).scroll(function() {
       links[i].target = '_blank';
     }
   }
-  links = document.querySelectorAll('a[href^="sapere-audete.blogspot"]'),
+  links = document.querySelectorAll('a[href*="sapere-audete.blogspot"]'),
   l = links.length;
   for (var i = 0; i < l; i++) {
     var target = links[i].target;
     if (target) {
-      links[i].target = '_blank';
+      links[i].target = '_self';
     }
   }	
 }) ();
