@@ -48,8 +48,8 @@
 }
 .isMobile #Blog1_blog-pager-newer-link,
 .isMobile #Blog1_blog-pager-older-link {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.6em;
+    font-weight: 500;
     padding: 0 10px;
     background: #ddd;
     border: 1px solid #ddd;
