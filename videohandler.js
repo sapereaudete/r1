@@ -9,7 +9,7 @@
     }
     return video_id;
   }
-  var iframes = document.querySelectorAll('.post-body.entry-content iframe.autoResize'),
+  var iframes = document.querySelectorAll('.post-body.entry-content iframe.autoResize:not([src*="list="])'),
       width = $('.post-body.entry-content').width() > 960 ? 960 : $('.post-body.entry-content').width(),
       height = parseInt(width * global.resizeFaktor) + 'px';
   for (var i = 0; i < iframes.length; i++) {
