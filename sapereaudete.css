@@ -744,7 +744,7 @@ ul#ueberblick {
     list-style-type: none;
     padding-inline-start: 0
 }
-div#einstieg ul li a:link {
+#ueberblick > li > a {
     color: #222
 }
 div#einstieg div.thema {
