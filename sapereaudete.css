@@ -741,7 +741,6 @@ iframe.autoResize:hover {
 
 /* einstieg.html */
 ol#ueberblick {
-    ___list-style-type: none;
     padding-inline-start: 0
 }
 #ueberblick > li > a {
