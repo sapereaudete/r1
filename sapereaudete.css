@@ -740,7 +740,7 @@ iframe.autoResize:hover {
 }
 
 /* einstieg.html */
-ul#ueberblick {
+ol#ueberblick {
     list-style-type: none;
     padding-inline-start: 0
 }
