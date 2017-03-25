@@ -740,9 +740,6 @@ iframe.autoResize:hover {
 }
 
 /* einstieg.html */
-ol#ueberblick {
-    padding-inline-start: 0
-}
 #ueberblick > li > a {
     color: #222
 }
