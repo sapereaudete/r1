@@ -738,3 +738,13 @@ iframe.autoResize:hover {
     text-shadow: 1px 1px #444;
     top: 10px;
 }
+
+/* einstieg.html */
+ul#ueberblick {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+div#einstieg div.thema {
+    border: 1px solid gray;
+    padding: 5px
+}
