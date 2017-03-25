@@ -742,7 +742,10 @@ iframe.autoResize:hover {
 /* einstieg.html */
 ul#ueberblick {
     list-style-type: none;
-    padding-inline-start: 0;
+    padding-inline-start: 0
+}
+div#einstieg ul li a {
+    color: #222
 }
 div#einstieg div.thema {
     border: 1px solid gray;
