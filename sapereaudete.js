@@ -166,7 +166,7 @@ $(window).scroll(function() {
       links[i].target = '_self';
     }
   }
-  links = document.querySelectorAll('.post-body a[href*="sapere-audete.blogspot"], .BlogArchive a[href*="sapere-audete.blogspot"]'),
+  links = document.querySelectorAll('.labelMap a[href*="sapere-audete.blogspot"], .post-body a[href*="sapere-audete.blogspot"], .BlogArchive a[href*="sapere-audete.blogspot"]'),
   l = links.length;
   for (var i = 0; i < l; i++) {
     links[i].rel = 'nofollow';
