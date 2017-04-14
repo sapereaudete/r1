@@ -169,10 +169,7 @@ $(window).scroll(function() {
   links = document.querySelectorAll('.post-body a[href*="sapere-audete.blogspot"], .BlogArchive a[href*="sapere-audete.blogspot"]'),
   l = links.length;
   for (var i = 0; i < l; i++) {
-    var target = links[i].target;
-    if (target) {
-      links[i].rel = 'nofollow';
-    }
+    links[i].rel = 'nofollow';
   }	
 }) ();
 
