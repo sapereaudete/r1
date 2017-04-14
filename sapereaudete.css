@@ -557,7 +557,7 @@ nav .navbar-collapse.collapse.in .navbar-right {
 #fakenews a {
     color: #fff;
 }
-.hideMobil {
+.isMobile .hideMobile {
     display: none;
 }
 
