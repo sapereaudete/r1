@@ -557,6 +557,9 @@ nav .navbar-collapse.collapse.in .navbar-right {
 #fakenews a {
     color: #fff;
 }
+.hideMobil {
+    display: none;
+}
 
 /* *** @media *** */
 /* *** 768 | 992 | 1200 *** */
@@ -691,7 +694,6 @@ iframe.autoResize:hover {
 #HTML11 {
     display: none;
 }
-
 .youtubePlaceholder {
     background-position: center;        
     background-repeat: no-repeat;
@@ -740,6 +742,7 @@ iframe.autoResize:hover {
 }
 
 /* einstieg.html */
+
 #ueberblick > li > a {
     color: #222
 }
