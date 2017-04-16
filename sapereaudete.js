@@ -197,17 +197,9 @@ if ($("#postLizenz")) {
     l = hrefs.length;
     for (var i = 0; i < l; i++) {
       if (mobile && hrefs[i].href.indexOf('?') < 0) {
-	if (hrefs[i].href.indexOf('#') < 0) {
-          hrefs[i].href = hrefs[i].href + '?m=1';
-	} else {
-	  hrefs[i].href = hrefs[i].href.replace('#', '?m=1#');  
-	}
+        hrefs[i].href = hrefs[i].href + '?m=1';
       } else {
-	if (hrefs[i].href.indexOf('#') < 0) {
-          hrefs[i].href = hrefs[i].href + '&m=1';
-        } else {
-	  hrefs[i].href = hrefs[i].href.replace('#', '&m=1#');  
-	}
+        hrefs[i].href = hrefs[i].href + '&m=1';
       }
     }
     // Search
@@ -222,6 +214,14 @@ if ($("#postLizenz")) {
   }
 }) ();
 
+(function () {
+  var hrefs = document.querySelectorAll('#ueberblick a[href*="#einstieg"]'),
+  l = hrefs.length;
+  for (var i = 0; i < l; i++) {
+    hrefs[i].href = hrefs[i].href.substr(hrefs[i].href.indexOf('#einstieg'));
+ }	  
+}) ();	
+	
 // wg. einstieg.html
 // http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
 // The function actually applying the offset
