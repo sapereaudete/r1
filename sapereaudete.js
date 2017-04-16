@@ -223,7 +223,7 @@ if ($("#postLizenz")) {
     //document.querySelector('#desktopVersion').href 
   }
 }) ();
-
+/*
 (function () {
   var hrefs = document.querySelectorAll('#ueberblick a[href*="#einstieg"]'),
   l = hrefs.length;
@@ -231,6 +231,7 @@ if ($("#postLizenz")) {
     hrefs[i].href = hrefs[i].href.substr(hrefs[i].href.indexOf('#einstieg'));
  }	  
 }) ();	
+*/
 	
 // wg. einstieg.html
 // http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
