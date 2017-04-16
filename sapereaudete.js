@@ -227,7 +227,6 @@ if ($("#postLizenz")) {
   l = hrefs.length;
   for (var i = 0; i < l; i++) {
     var href = hrefs[i].href.substr(hrefs[i].href.indexOf('#einstieg'));
-    console.log(href);
     hrefs[i].href = href;
   }
 }) ();
