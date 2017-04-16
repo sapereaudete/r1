@@ -198,10 +198,20 @@ if ($("#postLizenz")) {
     for (var i = 0; i < l; i++) {
       if (mobile && hrefs[i].href.indexOf('?') < 0) {
         hrefs[i].href = hrefs[i].href + '?m=1';
-      } else {
-        hrefs[i].href = hrefs[i].href + '&m=1';
-      }
-    }
+ 	if (hrefs[i].href.indexOf('#') < 0) {
+           hrefs[i].href = hrefs[i].href + '?m=1';
+ 	} else {
+ 	  hrefs[i].href = hrefs[i].href.replace('#', '?m=1#');  
+ 	}
+       } else {
+         hrefs[i].href = hrefs[i].href + '&m=1';
+       if (hrefs[i].href.indexOf('#') < 0) {
+           hrefs[i].href = hrefs[i].href + '&m=1';
+         } else {
+ 	  hrefs[i].href = hrefs[i].href.replace('#', '&m=1#');  
+ 	}
+       }
+     }
     // Search
     document.querySelector('#formActionMobile').name = 'm';
     document.querySelector('#formActionMobile').value = '1';
