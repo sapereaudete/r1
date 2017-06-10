@@ -219,7 +219,7 @@ if ($("#postLizenz")) {
   } else {
     // Mobil Icon
     document.querySelectorAll('#mobilVersion')[0].style.display = 'block';
-    document.querySelectorAll('#mobilVersion')[0].href = document.querySelectorAll('div.mobile-desktop-link a.home-link')[0].href;
+    document.querySelectorAll('#mobilVersion')[0].href = document.querySelectorAll('div.blog-mobile-link a')[0].href;
   }
 }) ();
 
