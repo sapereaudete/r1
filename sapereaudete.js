@@ -214,11 +214,12 @@ if ($("#postLizenz")) {
     document.querySelector('#formActionMobile').name = 'm';
     document.querySelector('#formActionMobile').value = '1';
     // Desktop-Icon
-    //document.querySelector('#desktopVersion').style.display = 'block';
-    //document.querySelector('#desktopVersion').href 
+    document.querySelectorAll('#desktopVersion')[0].style.display = 'block';
+    document.querySelectorAll('#desktopVersion')[0].href = document.querySelectorAll('div.mobile-desktop-link a.home-link')[0].href;
   } else {
-    //document.querySelector('#mobilVersion').style.display = 'block';
-    //document.querySelector('#desktopVersion').href 
+    // Mobil Icon
+    document.querySelectorAll('#mobilVersion')[0].style.display = 'block';
+    document.querySelectorAll('#mobilVersion')[0].href = document.querySelectorAll('div.mobile-desktop-link a.home-link')[0].href;
   }
 }) ();
 
