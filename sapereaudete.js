@@ -77,10 +77,20 @@ function fixNavbar() {
 }
 fixNavbar();
 
+function setLabelContainerHeight() {
+  var height = bodyHeight = ($('#Text3').height() + $('#HTML13').height() - $('#Label1 > h2').height() + 10) + 'px';
+  $('#Label1 .list-label-widget-content').css({
+    'height': height,
+    'overflow': 'auto'
+  });
+}
+setLabelContainerHeight();
+
 $(window).on('load resize', function() {
     setPageWidthClass();
     resizeVideos();
     fixNavbar();
+    setLabelContainerHeight();
 });
 
 $.each($('.navbar').find('li'), function() {
@@ -249,12 +259,3 @@ window.addEventListener("hashchange", offsetAnchor);
 // seems necessary to allow the browser to jump to the anchor first.
 // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
 window.setTimeout(offsetAnchor, 1);
-
-// footer
-(function () {
-  var height = bodyHeight = ($('#Text3').height() + $('#HTML13').height() - $('#Label1 > h2').height() + 10) + 'px';
-  $('#Label1 .list-label-widget-content').css({
-    'height': height,
-    'overflow': 'auto'
-  });
-}) ();
