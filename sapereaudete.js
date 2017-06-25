@@ -253,7 +253,7 @@ window.setTimeout(offsetAnchor, 1);
 // footer
 (function() {
   var height = bodyHeight = ($('#footer11').height() - $('#Label1 > h2').height()) + 'px';
-  $('#Label1 .labelMap').css({
+  $('#Label1 .list-label-widget-content').css({
     'height':height,
     'overflow': 'auto'});
 })();
