@@ -251,9 +251,10 @@ window.addEventListener("hashchange", offsetAnchor);
 window.setTimeout(offsetAnchor, 1);
 
 // footer
-(function() {
-  var height = bodyHeight = ($('#footer11').height() - $('#Label1 > h2').height()) + 'px';
+(function () {
+  var height = bodyHeight = ($('#Text3').height() + $('#HTML13').height() - $('#Label1 > h2').height() + 10) + 'px';
   $('#Label1 .list-label-widget-content').css({
-    'height':height,
-    'overflow': 'auto'});
-})();
+    'height': height,
+    'overflow': 'auto'
+  });
+}) ();
