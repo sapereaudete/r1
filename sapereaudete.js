@@ -249,3 +249,11 @@ window.addEventListener("hashchange", offsetAnchor);
 // seems necessary to allow the browser to jump to the anchor first.
 // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
 window.setTimeout(offsetAnchor, 1);
+
+// footer
+(function() {
+  var height = $('#footer11').height()+'px'; 
+  $('#footer12').css({
+    'height':height,
+    'overflow': 'auto'});
+})();
