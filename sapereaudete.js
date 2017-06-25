@@ -252,8 +252,8 @@ window.setTimeout(offsetAnchor, 1);
 
 // footer
 (function() {
-  var height = $('#footer11').height()+'px'; 
-  $('#footer12').css({
+  var height = bodyHeight = ($('#footer11').height() - $('#Label1 > h2').height()) + 'px';
+  $('#Label1 .labelMap').css({
     'height':height,
     'overflow': 'auto'});
 })();
