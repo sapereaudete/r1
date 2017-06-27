@@ -398,6 +398,9 @@ html .post-body div.img img.non100 {
     margin: 0;
     margin-bottom: 0;
 }
+.nav > li > a {
+    padding: 10px 5px
+}
 nav .navbar-nav li a,
 #Text1 ul li a {
     font-size: 1.2em;
